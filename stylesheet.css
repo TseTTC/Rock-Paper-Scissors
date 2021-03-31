@@ -1,0 +1,47 @@
+
+#container {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+div.middle {
+    position: relative;
+    width: 1920px;
+    height: 150px;
+    border: 1px solid black;
+}
+.class {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    height: 150px;
+    line-height: 300px;
+}
+#title {
+    position: relative;
+    text-align: center;
+    margin: auto;   
+    width: 90%;
+    height: 150px;
+    line-height: 150px;
+}
+.button img {
+    width: 100%;
+    height: auto;
+  }
+/* Style buttons */
+.btn {
+    background-color: #4DAAA7; /* Blue background */
+    border-style: dotted; /* Remove borders */
+    color:#333333 ; /* White text */
+    padding: 15px 15px; /* Some padding */
+    font-size: 30px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+}
+  
+  
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: RoyalBlue;
+}
+
