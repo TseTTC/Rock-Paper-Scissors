@@ -106,7 +106,7 @@ function playRound(playerSelection,computerSelection) {
             winner()
             return("You lose! Scissors vs Rock, Rock beats Scissors")
             
-        } else if(playerSelection == "Paper") {
+        } else if(computerSelection == "Paper") {
             playerScore++
             console.log(enemyScore)
             console.log(playerScore)

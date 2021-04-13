@@ -1,5 +1,6 @@
-<h2>initial Commit</h2>
+<h2>Initial Commit</h2>
 
+Completed:\
 -Added computerPlay() function to generate computer's RPS\
 -Added playRound() function to be return who wins\
 -Added Test code
@@ -14,3 +15,8 @@ Completed:\
 To Do:\
 -Nicer icons\
 -Animated icons and health 
+
+<h3>4/13/2021</h2>
+
+Completed:\
+-Debugging of Scissors vs Papers
