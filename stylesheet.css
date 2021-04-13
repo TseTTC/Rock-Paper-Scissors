@@ -1,9 +1,19 @@
 
-#container {
-    display:flex;
-    justify-content: center;
-    align-items:center;
+body {
+    background-image: url(images/T_0style.svg);
+    height: 100%;
+    color: white;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
 }
+body, html {
+    height: 100%;
+}
+
 div.middle {
     position: relative;
     width: 1920px;
@@ -18,12 +28,8 @@ div.middle {
     line-height: 300px;
 }
 #title {
-    position: relative;
-    text-align: center;
-    margin: auto;   
-    width: 90%;
-    height: 150px;
-    line-height: 150px;
+    text-align:center;
+
 }
 .button img {
     width: 100%;
@@ -37,11 +43,89 @@ div.middle {
     padding: 15px 15px; /* Some padding */
     font-size: 30px; /* Set a font size */
     cursor: pointer; /* Mouse pointer on hover */
+    
 }
   
   
 /* Darker background on mouse-over */
 .btn:hover {
-    background-color: RoyalBlue;
+    background-color: rgb(180, 196, 245);
+}
+.btn:active {
+    background-color: rgb(134, 163, 248);
+}
+
+h2 {
+
+    color: rgb(255, 255, 255);
+}
+h1 {
+    font-size: 40px;
+}
+#content{
+    display: grid;
+    width: 50vw;
+    height: 300px;
+    align-items:top;
+    justify-content: center;
+}
+#game {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 300px;
+}
+#player-choice, #enemy-choice {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    
+}
+#container {
+    display:grid;
+    grid-template: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items:center;
+}
+#score{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+p {
+    margin:auto;
+}
+.button{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+}
+
+.choice {
+    background-color: #4DAAA7; /* Blue background */
+    color:#333333 ; /* White text */
+    padding: 15px 15px; /* Some padding */
+    font-size: 80px; /* Set a font size */
+}
+.scissors{
+    transform:scaleX(-1);
+}
+#btm-container{
+    margin:auto;
+}
+
+#end {
+    font-family: 'Press Start 2P';
+    padding: 10px;
+    font-size: 15px;
+    background-color: #95f3f0; /* Blue background */
+    color:#333333 ; /* White text */
+    padding: 15px 15px; /* Some padding */
+    font-weight:block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    
+
+}
+#btm-container {
+    display:grid;
 }
 

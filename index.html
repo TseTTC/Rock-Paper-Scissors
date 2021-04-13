@@ -8,47 +8,44 @@
     <script src="RPS.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"">
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<h1 id="title">ROCK PAPER SCISSORS! </h1>
+
 <div id="container">
-    <div id="title">
-        <h1>Rock Paper Scissors</h1>
+    <div id = "score">
+        <p id="player-score">Player Score: 0</p>
+        <p id="enemy-score">Enemy Score: 0</p>
     </div>
-</div>
-<div id="container">
+    <div id = "game">
+        <div id = "player-choice">
+            <div id = "player-move"><i class="fa fa-hand-paper-o choice" aria-hidden="true"></i></div>
+        </div>
+        <div id = "enemy-choice">
+            <div id = "enemy-move"><i class="fa fa-hand-paper-o choice" aria-hidden="true"></i></div>
+        </div>
+    </div>
     <div id="content">
-        <div>
+        <div id="player-container">
             <h2>Player's choice:</h2>
-            Rock Paper Scissors (User input)
-        </div>
-        <div class="button">
-            <button class="btn" value = "Paper" onclick="clicks(this.value)"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
-            <button class="btn" value = "Rock" onclick="clicks(this.value)"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
-            <button class="btn" value = "Scissors" onclick="clicks(this.value)"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
-        </div>
-        <div>
-            Player's Score: <p id="playerScore1"></p>
-        </div>
-        <div id="content">  
-            <h2>Enemy's weapon:</h2>
-            Rock Paper Scissors (Enemy's input)
-            <div id="content">
-                <div class="button">
-                    <button class="btn" id="enemyPaper"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
-                    <button class="btn" id="enemyRock"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
-                    <button class="btn" id="enemyScissors"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
-                </div>
-                <div id="content">
-                    Enemy's Score: <p id="enemyScore1"></p>
-                </div>  
-        </div>
+
+            <div class="button">
+                <button class="btn" value = "Paper" onclick="clicks(this.value)"><i class="fa fa-hand-paper-o" aria-hidden="true"></i></button>
+                <button class="btn" value = "Rock" onclick="clicks(this.value)"><i class="fa fa-hand-rock-o" aria-hidden="true"></i></button>
+                <button class="btn" value = "Scissors" onclick="clicks(this.value)"><i class="fa fa-hand-scissors-o" aria-hidden="true"></i></button>
+            </div>
+             
+    </div>
+    <div id ="btm-container">
+        <h1 id="result"></h1>
+        <button id = "end" onclick ="restart()"> RESTART </button>
+
     </div>
 </div>
-<script>
-    document.getElementById("playerScore1").innerHTML = playerScore;
-    document.getElementById("enemyScore1").innerHTML = enemyScore;
-</script>
+
 </body>
 
 </html>
